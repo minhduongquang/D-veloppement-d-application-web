@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <script rel="script" src="js/bootstrap.min.js"></script>
+    <script rel="script" src="js/jquery.min.js"></script>
+    <script rel="script" src="js/scrip.js"></script>
+    <script rel="script" src="js/arr.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="row">
+            <span class="title">ABC </span>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="image/logo/logo.png" class="logo">
+            </div>
+            <div class="col-md-5 container-search">
+                <div class="search col-md-10">
+                    <input type="text" placeholder="search somethings" class="txt-search" id="txtSearch" >
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">index1</a></li>
+                        <li><a href="#">index2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <select name="choose-language" class="choose-language">
+                    <option value="1" selected>Việt Nam</option>
+                    <option value="2">Đông Lào</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="banner">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/banner/mercedes-benz GLS.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/banner/porsche 718 boxster.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/banner/mercedes c300 amg.jpg" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <div class="content">
+    <div class="topnav">
+        <a class="active" href="#home">Trang chủ</a>
+        <a href="#news">Tin tức</a>
+        <a href="#contact">Liên hệ</a>
+        <a href="#about">Về chúng tôi</a>
+    </div>
+    <div class="sidebar">
+        <button class="button" id="all" onclick="getAll()">Loại xe</button>
+        <button class="button" onclick="getMec()" >Mercedes</button>
+        
+        <button class="button" onclick="getPor()">Porsche</button>
+    
+        <button class="button" onclick="getInnova()">Innova</button>
+  
+        <button class="button" onclick="getMazda()">Mazda</button>
+   
+        <button class="button" onclick="getVin()">Vin Fast</button>
+
+        <button class="button" onclick="getKia()">Kia Morning</button>
+  
+        <button class="button" onclick="getFord()">Ford</button>
+
+        <button class="button" id="all" onclick="getAll()">Dòng xe</button>
+
+        <button class="button" onclick="getSedan()">Sedan</button>
+
+        <button class="button" onclick="getSUV()">SUV</button>
+
+        <button class="button" onclick="getPickup()">Bán tải</button>
+
+        <button class="button" onclick="getHatchback()">Hatchback</button>
+
+        <button class="button" onclick="getConvertible()">Convertible</button>
+
+        <button class="button" onclick="getMPV()">MPV</button>
+    
+    </div>
+       <div class="info" id='info'>
+            <div class="box">
+                    <img id="slider1" src="image/ava/porsche panamera (truoc).png">
+                    <button style="text-align: left; width: 50px; height: 25px;" onclick="prev1()"> Trước </button>
+                    <button style="text-align: right;width: 50px; height: 25px;" onclick="next1()"> Sau </button>
+                <br/>
+                <a href="car1/car1.html">Porsche panamera</a>
+            </div>
+            <div class="box">
+                    <img id="slider2" src="image/ava/mercedes c300 amg (truoc).png">
+                    <button style="text-align: left; width: 50px; height: 25px;" onclick="prev2()"> Trước </button>
+                    <button style="text-align: right;width: 50px; height: 25px;" onclick="next2()"> Sau </button>
+                <br/>
+                <a href="car1/car1.html">Mercedes c300</a>
+            </div>
+            <div class="box">
+                    <img id="slider3" src="image/ava/porsche 718 boxster (truoc).png">
+                    <button style="text-align: left; width: 50px; height: 25px;" onclick="prev3()"> Trước </button>
+                    <button style="text-align: right;width: 50px; height: 25px;" onclick="next3()"> Sau </button>
+                <br/>
+                <a href="car1/car1.html">Porsche 718 boxster</a>
+            </div>
+           <div class="box">
+               <img id="slider4" src="image/ava/ford Ranger (sau).png">
+               <button style="text-align: left; width: 50px; height: 25px;" onclick="prev4()"> Trước </button>
+               <button style="text-align: right;width: 50px; height: 25px;" onclick="next4()">  Sau </button>
+               <br/>
+               <a href="car1/car1.html">Ford Ranger</a>
+           </div>
+           <div class="box">
+               <img id="slider5" src="image/ava/kia morning (truoc).png">
+               <button style="text-align: left; width: 50px; height: 25px;" onclick="prev5()"> Trước </button>
+               <button style="text-align: right;width: 50px; height: 25px;" onclick="next5()">  Sau </button>
+               <br/>
+               <a href="car1/car1.html">Kia Morning</a>
+           </div>
+           <div class="box">
+            <img id="slider6" src="image/ava/kia sedona (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev6()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next6()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Kia Sedona</a>
+        </div>
+        <div class="box">
+            <img id="slider7" src="image/ava/mazda cx5 (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev7()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next7()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Mazda CX-5</a>
+        </div>
+        <div class="box">
+            <img id="slider8" src="image/ava/mercedes c200 cabriolet (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev8()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next8()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Mercedes C200 Cabriolet</a>
+        </div>
+        <div class="box">
+            <img id="slider9" src="image/ava/mercedes-benz GLS (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev9()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next9()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Mercedes-Benz GLS</a>
+        </div>
+        <div class="box">
+            <img id="slider10" src="image/ava/porsche-macan (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev10()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next10()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Porsche Macan</a>
+        </div>
+        <div class="box">
+            <img id="slider11" src="image/ava/toyota innova (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev11()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next11()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Toyota Innova</a>
+        </div>
+        <div class="box">
+            <img id="slider12" src="image/ava/vinfast fadil (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev12()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next12()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Vinfast Fadil</a>
+        </div>
+        <div class="box">
+            <img id="slider13" src="image/ava/ford-150 (truoc).png">
+            <button style="text-align: left; width: 50px; height: 25px;" onclick="prev13()"> Trước </button>
+            <button style="text-align: right;width: 50px; height: 25px;" onclick="next13()">  Sau </button>
+            <br/>
+            <a href="car1/car1.html">Ford-150</a>
+        </div>
+   </div>
+ <div class="footer"> footer </div>
+    <div class="clearfix"></div>
+</body>
+</html>
+<script type="application/javascript">
+    $(document).ready(function () {
+        $('#carouselExampleControls').carousel({
+            touch : true,
+            interval : 2000
+        });
+        let inputSearch = document.getElementById('txtSearch');
+        inputSearch.addEventListener('keyup', (e) => {
+            if(e.keyCode == 13)
+                SearhST()
+        });
+    });
+    
+</script>

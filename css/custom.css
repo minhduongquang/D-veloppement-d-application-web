@@ -1,0 +1,132 @@
+body {
+    width: auto;
+    text-align: center;
+}
+.container {
+    background-color: beige;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-left: 120px;
+}
+
+span.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.search {
+    display: flex;
+    float: right;
+    bottom: 5px;
+    position: absolute;
+}
+
+.container-search {
+    position: relative;
+}
+
+.search > input.txt-search {
+    width: 80%;
+    text-align: center;
+}
+
+img.d-block.w-100 {
+    max-width: 100%;
+    height: 300px !important;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 300px;
+}
+
+.banner {
+    margin-top: 5px;
+}
+.content{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.content .info{
+    /* flex-direction: row; */
+    float: right;
+    text-align: center;
+    height: auto;
+    margin-left: 50px;
+    width: 75%;
+    height: 100%;
+}
+.box{
+    margin: 0 10px;
+    box-shadow: rgba(0, 0, 0, .1);
+    width: 300px;
+    float: left;
+}
+/*  .box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}  */
+
+.content .info img{
+    width: 250px;
+    height: 150px;
+    margin: 5px 5px 5px 0px;
+    border-radius: 5px; 
+    
+}
+.content a{
+    text-decoration: none;
+}
+.content .td1{
+    text-align: center;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.footer{
+    background-color: gray; clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+}
+.clearfix{
+    clear:both;
+}
+.sidebar{
+    width: 10%;
+    height: 100%;
+    float: left;
+
+}
+.button{
+    margin-top: 5px;
+    width: 200px;
+    background-color: #f2f2f2;
+}
+#all{
+    margin-top: 5px;
+    width: 200px;
+    background-color: rgba(150, 150, 233, 0.891);
+}
+button :hover{
+    background: #74a7b7
+}
+
